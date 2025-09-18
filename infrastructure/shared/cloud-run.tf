@@ -28,12 +28,6 @@ resource "google_project_iam_member" "cloud-runner" {
   project = data.google_project.project.id
 }
 
-resource "google_project_iam_member" "cloud-runner-svc" {
-  role    = "roles/run.serviceAgent"
-  member  = "serviceAccount:service-${data.google_project.project.number}@serverless-robot-prod.iam.gserviceaccount.com"
-  project = data.google_project.project.id
-}
-
 output "cloud-runner-email" {
   value = google_service_account.cloud-runner.email
 }
