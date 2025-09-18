@@ -14,7 +14,7 @@
       "@codedependant/semantic-release-docker",
       {
         "dockerRegistry": "ghcr.io",
-        "dockerProject": "smartive-education",
+        "dockerProject": "ost-cas-fea-25-26",
         "dockerImage": "cas-fee-adv-qwacker-api",
         "dockerLogin": false,
         "dockerContext": "./",
