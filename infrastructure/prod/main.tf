@@ -7,7 +7,7 @@ locals {
 }
 
 provider "google" {
-  project = "ost-cas-adv-fee"
+  project = "cas-fee-adv-2025"
   region  = local.gcp_region
 }
 
