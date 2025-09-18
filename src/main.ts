@@ -57,7 +57,7 @@ async function bootstrap() {
         name: 'ZITADEL',
         in: 'header',
         openIdConnectUrl:
-          'https://cas-fee-advanced-ocvdad.zitadel.cloud/.well-known/openid-configuration',
+          'https://cas-fee-adv-ed1ide.zitadel.cloud/.well-known/openid-configuration',
       },
       'ZITADEL',
     )

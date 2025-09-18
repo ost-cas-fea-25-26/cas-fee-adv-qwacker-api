@@ -3,7 +3,7 @@ locals {
   gcp_region     = "europe-west6"
   env            = "prod"
   zitadel_org_id = "179828644300980481"
-  zitadel_issuer = "cas-fee-advanced-ocvdad.zitadel.cloud"
+  zitadel_issuer = "cas-fee-adv-ed1ide.zitadel.cloud"
 }
 
 provider "google" {

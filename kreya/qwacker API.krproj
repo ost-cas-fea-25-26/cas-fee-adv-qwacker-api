@@ -32,7 +32,7 @@
         "redirectUri": "http://localhost:8080/signin",
         "clientId": "179944860378267905@cas_fee_adv_qwacker",
         "scope": "openid profile",
-        "issuer": "https://cas-fee-advanced-ocvdad.zitadel.cloud",
+        "issuer": "https://cas-fee-adv-ed1ide.zitadel.cloud",
         "clientAuthMethod": "none",
         "grantType": "authorizationCode"
       }
@@ -45,7 +45,7 @@
         "redirectUri": "http://localhost:8080/signin",
         "clientId": "181236603920908545@cas_fee_adv_qwacker_prod",
         "scope": "openid profile",
-        "issuer": "https://cas-fee-advanced-ocvdad.zitadel.cloud",
+        "issuer": "https://cas-fee-adv-ed1ide.zitadel.cloud",
         "clientAuthMethod": "none",
         "grantType": "authorizationCode"
       }
