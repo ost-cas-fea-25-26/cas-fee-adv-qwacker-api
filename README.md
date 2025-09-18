@@ -46,16 +46,15 @@ instance for qwacker. A valid account in this instance is required
 to get an access token. You can configure your application or
 Postman/Insomnia/Kreya client to use this instance.
 
-
 The following OIDC configuration is required to authenticate against
 the ZITADEL instance:
 
-| **Property**        | **Value**                                                                                                                                                    |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Issuer              | `https://cas-fee-adv-ed1ide.zitadel.cloud`                                                                                                              |
-| Discovery Endpoint  | `https://cas-fee-adv-ed1ide.zitadel.cloud/.well-known/openid-configuration`                                                                             |
-| Client ID           | `245828710568131414@mumbleweb`                                                                                                                |
-| Use PKCE            | `true`                                                                                                                                                       |
+| **Property**        | **Value**                                                                                                                                                                                                         |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Issuer              | `https://cas-fee-adv-ed1ide.zitadel.cloud`                                                                                                                                                                        |
+| Discovery Endpoint  | `https://cas-fee-adv-ed1ide.zitadel.cloud/.well-known/openid-configuration`                                                                                                                                       |
+| Client ID           | `245828710568131414@mumbleweb`                                                                                                                                                                                    |
+| Use PKCE            | `true`                                                                                                                                                                                                            |
 | Redirect Return URL | One of the following:<br><br>- http://localhost/signin<br>- http://localhost:3000/signin<br>- http://localhost:5000/signin<br>- http://localhost:8080/signin<br>- http://localhost:3000/api/auth/callback/zitadel |
 
 When first encountering the login screen, if no account exists, you may register a new account.
@@ -94,7 +93,7 @@ If you want to develop on this API, follow the instructions below.
 1. Clone the repository
 2. Install the dependencies with `npm install`
 3. Generate the gRPC files with `npm run grpc:types`
-3. Copy environment variables `cp .env.dist .env` (Ask smartive for secrets)
-3. Start db `npm run deps`
-3. Run db migrations
-4. Start the API with `npm run start:dev`
+4. Copy environment variables `cp .env.dist .env` (Ask smartive for secrets)
+5. Start db `npm run deps`
+6. Run db migrations
+7. Start the API with `npm run start:dev`
