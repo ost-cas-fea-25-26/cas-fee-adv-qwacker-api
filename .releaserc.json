@@ -37,7 +37,7 @@
       "@codedependant/semantic-release-docker",
       {
         "dockerRegistry": "europe-west6-docker.pkg.dev",
-        "dockerProject": "ost-cas-adv-fee/qwacker-api-docker",
+        "dockerProject": "cas-fee-adv-2025/qwacker-api-docker",
         "dockerImage": "cas-fee-adv-qwacker-api",
         "dockerLogin": false,
         "dockerContext": "./",
@@ -60,7 +60,7 @@
       "@codedependant/semantic-release-docker",
       {
         "dockerRegistry": "europe-west6-docker.pkg.dev",
-        "dockerProject": "ost-cas-adv-fee/qwacker-api-docker",
+        "dockerProject": "cas-fee-adv-2025/qwacker-api-docker",
         "dockerImage": "cas-fee-adv-qwacker-grpcwebproxy",
         "dockerLogin": false,
         "dockerContext": "./",
