@@ -51,9 +51,9 @@ the ZITADEL instance:
 
 | **Property**        | **Value**                                                                                                                                                    |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Issuer              | `https://cas-fee-advanced-ocvdad.zitadel.cloud`                                                                                                              |
-| Discovery Endpoint  | `https://cas-fee-advanced-ocvdad.zitadel.cloud/.well-known/openid-configuration`                                                                             |
-| Client ID           | `181236603920908545@cas_fee_adv_qwacker_prod`                                                                                                                |
+| Issuer              | `https://cas-fee-adv-ed1ide.zitadel.cloud`                                                                                                              |
+| Discovery Endpoint  | `https://cas-fee-adv-ed1ide.zitadel.cloud/.well-known/openid-configuration`                                                                             |
+| Client ID           | `245828710568131414@mumbleweb`                                                                                                                |
 | Use PKCE            | `true`                                                                                                                                                       |
 | Redirect Return URL | One of the following:<br><br>- http://localhost/signin<br>- http://localhost:3000/signin<br>- http://localhost:5000/signin<br>- http://localhost:8080/signin<br>- http://localhost:3000/api/auth/callback/zitadel |
 
