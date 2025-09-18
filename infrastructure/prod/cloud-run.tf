@@ -23,7 +23,7 @@ resource "google_cloud_run_service" "api" {
 
     spec {
       containers {
-        image = "europe-west6-docker.pkg.dev/ost-cas-adv-fee/qwacker-api-docker/cas-fee-adv-qwacker-api:${var.release_version}"
+        image = "europe-west6-docker.pkg.dev/cas-fee-adv-2025/qwacker-api-docker/cas-fee-adv-qwacker-api:${var.release_version}"
 
         resources {
           limits = {
@@ -161,7 +161,7 @@ resource "google_cloud_run_service" "grpcwebproxy" {
   template {
     spec {
       containers {
-        image = "europe-west6-docker.pkg.dev/ost-cas-adv-fee/qwacker-api-docker/cas-fee-adv-qwacker-grpcwebproxy:${var.release_version}"
+        image = "europe-west6-docker.pkg.dev/cas-fee-adv-2025/qwacker-api-docker/cas-fee-adv-qwacker-grpcwebproxy:${var.release_version}"
 
         args = [
           "--allow_all_origins",
