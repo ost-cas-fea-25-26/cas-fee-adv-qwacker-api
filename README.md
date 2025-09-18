@@ -46,6 +46,7 @@ instance for qwacker. A valid account in this instance is required
 to get an access token. You can configure your application or
 Postman/Insomnia/Kreya client to use this instance.
 
+
 The following OIDC configuration is required to authenticate against
 the ZITADEL instance:
 
