@@ -54,16 +54,8 @@ resource "zitadel_application_oidc" "frontend" {
     "https://cas-fee-adv-qwacker-app.vercel.app/api/auth/callback/zitadel",
     "https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/rest/oauth2-redirect.html",
     "https://mumble-yeahyeahyeah.ch/api/auth/callback/zitadel",
-    "https://www.mumble-yeahyeahyeah.ch/api/auth/callback/zitadel",
-    "http://app-yeahyeahyeah:3000/api/auth/callback/zitadel",
+    "https://www.mumble-yeahyeahyeah.ch/api/auth/callback/zitadel",,
     "http://host.docker.internal:3000/api/auth/callback/zitadel",
-    "https://app-pizza-hawaii.vercel.app/api/auth/callback/zitadel",
-    "https://app-team-ost.vercel.app/api/auth/callback/zitadel",
-    "https://app-bytelight.vercel.app/api/auth/callback/zitadel",
-    "https://app-lobsome.vercel.app/api/auth/callback/zitadel",
-    "https://app-pizza-hawaii.vercel.app/api/auth/callback/zitadel",
-    "https://app-musketeers.vercel.app/api/auth/callback/zitadel",
-    "https://z-index-next-app-at.vercel.app/api/auth/callback/zitadel"
   ]
   app_type                    = "OIDC_APP_TYPE_WEB"
   response_types              = ["OIDC_RESPONSE_TYPE_CODE"]
