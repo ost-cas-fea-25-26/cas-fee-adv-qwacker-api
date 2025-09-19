@@ -3,7 +3,7 @@ resource "google_secret_manager_secret" "db-pass" {
   secret_id = "${local.name}-${local.env}-db-pass"
 
   replication {
-    auto = {}
+    auto {}
   }
 }
 
@@ -26,7 +26,7 @@ resource "google_secret_manager_secret" "storage-access" {
   secret_id = "${local.name}-${local.env}-storage-access"
 
   replication {
-    auto = {}
+    auto {}
   }
 }
 
@@ -49,7 +49,7 @@ resource "google_secret_manager_secret" "api-auth-jwt" {
   secret_id = "${local.name}-${local.env}-api-auth-jwt"
 
   replication {
-    auto = {}
+    auto {}
   }
 }
 
@@ -72,7 +72,7 @@ resource "google_secret_manager_secret" "api-access-pat" {
   secret_id = "${local.name}-${local.env}-api-access-pat"
 
   replication {
-    auto = {}
+    auto {}
   }
 }
 
