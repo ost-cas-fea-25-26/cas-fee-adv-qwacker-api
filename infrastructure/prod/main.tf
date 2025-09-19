@@ -2,8 +2,8 @@ locals {
   name           = "qwacker-api"
   gcp_region     = "europe-west6"
   env            = "prod"
-  zitadel_org_id = "245808142053571414"
-  zitadel_issuer = "cas-fee-adv-ed1ide.zitadel.cloud"
+  zitadel_org_id = "338525821050296516"
+  zitadel_issuer = "cas-fia-25.cas-fee-adv-ed1ide.zitadel.cloud"
 }
 
 provider "google" {
