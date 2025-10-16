@@ -64,27 +64,27 @@ The authentication settings in [Kreya](https://kreya.app) are predefined. Only t
 ## REST
 
 The endpoint for HTTP requests to the API is:
-[`https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app`](https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app).
+[`https://qwacker-api-http-prod-927407260649.europe-west6.run.app`](qwacker-api-http-prod-927407260649.europe-west6.run.app).
 There is a Swagger UI documentation available at
-[`https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/rest/`](https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/rest/).
+[`qwacker-api-http-prod-927407260649.europe-west6.run.app/rest/`](qwacker-api-http-prod-927407260649.europe-west6.run.app/rest/).
 All endpoints and calls are documented in the Swagger UI.
 
 ## graphQL
 
 The endpoint for graphQL queries is
-[`https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/graphql`](https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/graphql).
+[`qwacker-api-http-prod-927407260649.europe-west6.run.app/graphql`](qwacker-api-http-prod-927407260649.europe-west6.run.app/graphql).
 This link also provides a graphQL playground where the schema and documentation can be accessed.
 
 ## gRPC / gRPC Web
 
 The gRPC endpoint is
-[`https://qwacker-api-grpc-prod-4cxdci3drq-oa.a.run.app`](https://qwacker-api-grpc-prod-4cxdci3drq-oa.a.run.app).
+[`https://qwacker-api-grpc-prod-927407260649.europe-west6.run.app`](https://qwacker-api-grpc-prod-927407260649.europe-west6.run.app).
 The endpoint can be directly accessed by any native gRPC client (NodeJS, Go, Java, ...).
 
 However, if you use gRPC in the browser, some native gRPC functions are not available.
 To use the gRPC API in the browser, you need to use a [gRPC Web](https://github.com/grpc/grpc-web) client.
 The endpoint for gRPC Web based clients is
-[`https://qwacker-api-grpcwebproxy-prod-4cxdci3drq-oa.a.run.app`](https://qwacker-api-grpcwebproxy-prod-4cxdci3drq-oa.a.run.app).
+[`https://qwacker-api-grpcwebproxy-prod-927407260649.europe-west6.run.app`](https://qwacker-api-grpcwebproxy-prod-927407260649.europe-west6.run.app).
 
 ## Development
 
