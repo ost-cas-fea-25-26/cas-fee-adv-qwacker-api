@@ -103,7 +103,7 @@ resource "google_cloud_run_service" "api" {
 
         env {
           name  = "AUTH_REDIRECT_URI"
-          value = "https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/rest/oauth2-redirect.html"
+          value = "https://qwacker-api-http-prod-927407260649.europe-west6.run.app/rest/oauth2-redirect.html"
         }
 
         env {

@@ -12,7 +12,7 @@
       "authId": "ec477734-add2-498b-8c2f-7bb0966711ba",
       "options": {
         "grpc": {
-          "endpoint": "https://qwacker-api-grpcwebproxy-prod-4cxdci3drq-oa.a.run.app"
+          "endpoint": "https://qwacker-api-grpcwebproxy-prod-927407260649.europe-west6.run.app"
         }
       }
     },

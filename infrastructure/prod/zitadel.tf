@@ -52,9 +52,7 @@ resource "zitadel_application_oidc" "frontend" {
     "http://localhost:8080/signin",
     "http://localhost:3000/api/auth/callback/zitadel",
     "https://cas-fee-adv-qwacker-app.vercel.app/api/auth/callback/zitadel",
-    "https://qwacker-api-http-prod-4cxdci3drq-oa.a.run.app/rest/oauth2-redirect.html",
-    "https://mumble-yeahyeahyeah.ch/api/auth/callback/zitadel",
-    "https://www.mumble-yeahyeahyeah.ch/api/auth/callback/zitadel",
+    "https://qwacker-api-http-prod-927407260649.europe-west6.run.app/rest/oauth2-redirect.html",
     "http://host.docker.internal:3000/api/auth/callback/zitadel"
   ]
   app_type                    = "OIDC_APP_TYPE_WEB"
