@@ -43,7 +43,7 @@
       "id": "ec477734-add2-498b-8c2f-7bb0966711ba",
       "options": {
         "redirectUri": "http://localhost:8080/signin",
-        "clientId": "181236603920908545@cas_fee_adv_qwacker_prod",
+        "clientId": "243151322562550215@mumble_auth_demo",
         "scope": "openid profile",
         "issuer": "https://cas-fee-adv-ed1ide.zitadel.cloud",
         "clientAuthMethod": "none",

@@ -98,7 +98,7 @@ resource "google_cloud_run_service" "api" {
 
         env {
           name  = "AUTH_CLIENT_ID"
-          value = "181236603920908545@cas_fee_adv_qwacker_prod"
+          value = "243151322562550215@mumble_auth_demo"
         }
 
         env {
