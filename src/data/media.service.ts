@@ -9,9 +9,7 @@ export class MediaService {
   private readonly bucket: Bucket;
 
   constructor(config: ConfigService) {
-    this.storage = new Storage({
-      credentials: JSON.parse(config.getOrThrow('STORAGE_SERVICE_ACCOUNT')),
-    });
+    this.storage = new Storage();
     this.bucket = this.storage.bucket(config.getOrThrow('STORAGE_BUCKET_NAME'));
   }
 

@@ -69,7 +69,7 @@ async function bootstrap() {
       oauth2RedirectUrl: process.env.AUTH_REDIRECT_URI,
       initOAuth: {
         clientId: process.env.AUTH_CLIENT_ID,
-        scopes: 'openid profile email',
+        scopes: ['openid', 'profile', 'email'],
         usePkceWithAuthorizationCodeGrant: true,
       },
     },

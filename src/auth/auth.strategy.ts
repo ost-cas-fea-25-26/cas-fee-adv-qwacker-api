@@ -19,4 +19,8 @@ export class ZitadelAuthStrategy extends PassportStrategy(
       },
     } as ZitadelIntrospectionOptions);
   }
+
+  async validate(payload: any): Promise<any> {
+    return payload;
+  }
 }
