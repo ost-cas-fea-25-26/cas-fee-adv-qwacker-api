@@ -4,12 +4,12 @@ import {
   createAccessTokenInterceptor,
   createManagementClient,
   ManagementServiceClient,
-} from '@zitadel/node/dist/grpc';
+} from '@zitadel/node/dist/api';
 import {
   Type,
   User,
   UserFieldName,
-} from '@zitadel/node/dist/grpc/generated/zitadel/user';
+} from '@zitadel/node/dist/api/generated/zitadel/user';
 
 export type ZitadelUser = {
   id: string;
@@ -19,14 +19,14 @@ export type ZitadelUser = {
   avatarUrl: string;
 };
 
-type HumanUser = User & { type?: { $case: 'human' } };
+type HumanUser = User;
 
 const mapUser = (user: HumanUser): ZitadelUser => ({
   id: user.id,
   userName: user.userName,
-  firstName: user.type?.human?.profile?.firstName ?? 'firstName',
-  lastName: user.type?.human?.profile?.lastName ?? 'lastName',
-  avatarUrl: user.type?.human?.profile?.avatarUrl ?? 'avatarUrl',
+  firstName: user.human?.profile?.firstName ?? 'firstName',
+  lastName: user.human?.profile?.lastName ?? 'lastName',
+  avatarUrl: user.human?.profile?.avatarUrl ?? 'avatarUrl',
 });
 
 const clamp = (num: number, min: number, max: number) =>
@@ -45,7 +45,7 @@ export class UsersService {
 
   async get(id: string) {
     const { user } = await this.mgmt.getUserByID({ id });
-    if (!user || user.type?.$case !== 'human') {
+    if (!user || !user.human) {
       throw new Error('User not found');
     }
 
@@ -54,9 +54,7 @@ export class UsersService {
 
   async list(offset: number, limit: number) {
     const { result, details } = await this.mgmt.listUsers({
-      queries: [
-        { query: { $case: 'typeQuery', typeQuery: { type: Type.TYPE_HUMAN } } },
-      ],
+      queries: [{ typeQuery: { type: Type.TYPE_HUMAN } }],
       query: {
         limit: clamp(limit, 1, 1000),
         offset,
