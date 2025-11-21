@@ -37,9 +37,8 @@ import { RestModule } from './rest/rest.module';
       autoSchemaFile: true,
       sortSchema: true,
       debug: false,
-      playground: true,
+      playground: false,
       introspection: true,
-      cors: true,
       resolvers: {
         Byte: ByteResolver,
       },
