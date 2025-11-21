@@ -39,5 +39,7 @@ COPY --from=build /app/package.json /app/package-lock.json ./
 RUN npm ci
 
 COPY --from=build /app/dist ./dist
+COPY --from=build /app/retry-migrations.sh ./
+RUN chmod +x ./retry-migrations.sh
 
 CMD npm run start:prod
