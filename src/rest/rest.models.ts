@@ -74,7 +74,7 @@ export const mapPostResult =
       mediaUrl: agg.mediaUrl,
       mediaType: agg.mediaType,
       likeCount: agg.likers.length,
-      likedByUser: agg.likers.includes(user ? user.sub ?? '' : ''),
+      likedByUser: agg.likers.includes(user ? (user.sub ?? '') : ''),
     };
 
     return agg.parentId

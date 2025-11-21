@@ -31,26 +31,26 @@ const mapPostResult =
           creator: post.creator,
         })
       : post.parentId
-      ? Object.assign(new Reply(), {
-          id: post.id,
-          creator: post.creator,
-          text: post.text,
-          mediaUrl: post.mediaUrl,
-          mediaType: post.mediaType,
-          likeCount: post.likers.length,
-          likedByUser: post.likers.includes(user?.sub ?? ''),
-          parentId: post.parentId,
-        })
-      : Object.assign(new Post(), {
-          id: post.id,
-          creator: post.creator,
-          text: post.text,
-          mediaUrl: post.mediaUrl,
-          mediaType: post.mediaType,
-          likeCount: post.likers.length,
-          likedByUser: post.likers.includes(user?.sub ?? ''),
-          replyCount: post.replyCount,
-        });
+        ? Object.assign(new Reply(), {
+            id: post.id,
+            creator: post.creator,
+            text: post.text,
+            mediaUrl: post.mediaUrl,
+            mediaType: post.mediaType,
+            likeCount: post.likers.length,
+            likedByUser: post.likers.includes(user?.sub ?? ''),
+            parentId: post.parentId,
+          })
+        : Object.assign(new Post(), {
+            id: post.id,
+            creator: post.creator,
+            text: post.text,
+            mediaUrl: post.mediaUrl,
+            mediaType: post.mediaType,
+            likeCount: post.likers.length,
+            likedByUser: post.likers.includes(user?.sub ?? ''),
+            replyCount: post.replyCount,
+          });
 
 @Resolver(() => RepliesResult)
 @Resolver(() => ListResult)
