@@ -8,6 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "npm run grpc:types && nest build",
+    "postbuild": "tsc datasource.prod.ts datasource.local.ts --outDir dist --module commonjs --esModuleInterop --skipLibCheck && tsc src/entities/*.ts src/migrations/*.ts --outDir dist/src --module commonjs --experimentalDecorators --emitDecoratorMetadata --esModuleInterop --skipLibCheck --declaration false",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
