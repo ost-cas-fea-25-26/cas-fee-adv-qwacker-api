@@ -1,4 +1,5 @@
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
@@ -36,13 +37,14 @@ import { RestModule } from './rest/rest.module';
       driver: ApolloDriver,
       autoSchemaFile: true,
       sortSchema: true,
-      debug: false,
-      playground: false,
       introspection: true,
+      playground: false,
       resolvers: {
         Byte: ByteResolver,
       },
       typeDefs: [ByteTypeDefinition],
+      csrfPrevention: false,
+      plugins: [ApolloServerPluginLandingPageLocalDefault()],
     }),
     GrpcModule,
     AuthModule,
