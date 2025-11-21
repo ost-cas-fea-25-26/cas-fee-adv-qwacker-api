@@ -7,8 +7,10 @@ import {
 } from '@nestjs/microservices';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { join } from 'path';
-import { description, version } from '../package.json';
+import pkg from '../package.json' with { type: 'json' };
 import { AppModule } from './app.module';
+
+const { description, version } = pkg;
 
 async function bootstrap() {
   const { log } = console;
@@ -69,7 +71,12 @@ async function bootstrap() {
       oauth2RedirectUrl: process.env.AUTH_REDIRECT_URI,
       initOAuth: {
         clientId: process.env.AUTH_CLIENT_ID,
-        scopes: ['openid', 'profile', 'email'],
+        scopes: [
+          'openid',
+          'profile',
+          'email',
+          'urn:zitadel:iam:org:project:id:342477345380127384:aud',
+        ],
         usePkceWithAuthorizationCodeGrant: true,
       },
     },

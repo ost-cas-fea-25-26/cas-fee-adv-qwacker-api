@@ -1,5 +1,5 @@
 # build api
-FROM node:16-alpine as build
+FROM node:20-alpine AS build
 
 ARG BUILD_VERSION=0.0.0-development
 
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # deploy
-FROM node:16-alpine as result
+FROM node:20-alpine AS result
 
 ARG BUILD_VERSION
 ARG COMMIT_SHA

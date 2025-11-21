@@ -3,10 +3,11 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
+    "builder": "webpack",
     "assets": [
       {
         "include": "grpc/protos/*.proto",
-        "outDir": "dist/src",
+        "outDir": "dist",
         "watchAssets": true
       }
     ]

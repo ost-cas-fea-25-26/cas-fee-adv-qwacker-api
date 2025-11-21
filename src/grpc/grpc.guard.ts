@@ -1,9 +1,4 @@
-import {
-  createParamDecorator,
-  ExecutionContext,
-  Injectable,
-  Logger,
-} from '@nestjs/common';
+import { ExecutionContext, Injectable, Logger } from '@nestjs/common';
 import { ZitadelAuthGuard } from 'src/rest/rest.guard';
 
 @Injectable()
