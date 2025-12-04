@@ -1,3 +1,7 @@
+# ⚠️ DEPRECATED: This repository is no longer maintained.
+
+Please use the new API repo: [smartive/cas-fee-adv-mumble-api](https://github.com/smartive/cas-fee-adv-mumble-api)
+
 # qwacker API
 
 This is the API for "qwacker". A simple API that supports creating
